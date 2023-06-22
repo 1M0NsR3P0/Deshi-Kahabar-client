@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-slide{
+    width: 54%;
+}
+.swiper-pagination{
+    display: none;
+}
+.bg{
+    /* background-image: url('../src/assets/images/15950765_Food-Facebook-Cover-Banner-17.jpg'); */
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.pic-anime{
+    animation: scaler 0.5s ease-in 1;
+    box-shadow: 20px 20px 60px black;
+}
+.move-right{
+    animation: mover 0.5s ease-in 1;
+}
+
+.myArrow{
+    animation: ArrowMove 0.5s ease-in-out infinite;
+}
+.animateChefs{
+    animation: chefs 0.8s  ease-in 1;
+    /* animation-delay: 0.6s; */
+}
+.zoomIn{
+    animation: zoom-in 1.8s ease-in 1;
+    animation-delay: 0.8s;
+}
+.popularChefMOve{
+    animation: popular 1.2s ease-in 1;
+    animation-delay: 1s;
+}
+.popularChefMOve2{
+    animation: popular2 1.2s ease-in 1;
+    animation-delay: 1s;
+}
+
+pre {
+    background: #eee;
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 3px;
+    max-width: 80ch;
+  }
+  
+  pre code {
+      text-align: left;
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 1.5;
+  }
+
+@keyframes popular {
+    from{
+        transform: translateX(500px);
+
+    }
+    to{
+
+        transform: translateX(0px);
+    }
+}
+@keyframes popular2 {
+    from{
+        transform: translateX(-200px);
+        
+    }
+    to{
+        transform: translateX(0px);
+
+    }
+}
+
+@keyframes chefs {
+    0%{
+        transform: translateX(1500px);
+
+    }
+
+    100%{
+
+        transform: translateX(0px);
+    }
+}
+@keyframes ArrowMove {
+    from{
+        transform: translateX(-0px);
+        
+    }
+    to{
+        transform: translateX(10px);
+
+    }
+}
+@keyframes mover {
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(-10px);
+    }
+}
+@keyframes scaler {
+    from{
+        
+        transform: scale(40%);
+    }
+    to{
+        transform: scale(100%);
+
+    }
+}
+
+@keyframes zoom-in {
+    from {
+      transform: scale(0, 1);
+    }
+    50%{
+        
+        transform: scale(1.5, 1.5);
+    }
+    to {
+        transform: scale(1, 0);
+
+    }
+}
